@@ -94,10 +94,10 @@ img_size = 2**8
 #choose either task 1 or task 2
 task = 2
 
-if task==2:
-    imgs, labs = generate_dataset_T2( xi=xi, gap_dist=gap_dist, img_size=img_size)
-elif task==1:
+if task==1:
     imgs, labs = generate_dataset_T1( xi=xi, gap_dist=gap_dist, img_size=img_size)
+elif task==2:
+    imgs, labs = generate_dataset_T21( xi=xi, gap_dist=gap_dist, img_size=img_size)
 c = 0
 imgs_plus = []
 imgs_minus = []
@@ -113,6 +113,6 @@ imgs_minus = torch.tensor(imgs_minus)
 print(imgs_plus.size())
 print(imgs_minus.size())
 
-torch.save(imgs_plus,"dataset_pts_circle_gap_1d_fullStride/data_points_xi_%d_Circle_Gap_%.1f_PLUS_imgSize_%d_T_%d.pt" %(xi,gap_dist,img_size,task))
-torch.save(imgs_minus,"dataset_pts_circle_gap_1d_fullStride/data_points_xi_%d_Circle_Gap_%.1f_MINUS_imgSize_%d_T_%d.pt" %(xi,gap_dist,img_size,task))
+torch.save(imgs_plus,"data_points_xi_%d_Circle_Gap_%.1f_PLUS_imgSize_%d_T_%d.pt" %(xi,gap_dist,img_size,task))
+torch.save(imgs_minus,"data_points_xi_%d_Circle_Gap_%.1f_MINUS_imgSize_%d_T_%d.pt" %(xi,gap_dist,img_size,task))
 
