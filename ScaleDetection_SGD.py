@@ -48,13 +48,11 @@ xi = int(sys.argv[1])
 img_size = int(sys.argv[2])
 gap = float(sys.argv[3])
 nbl = int(sys.argv[4])
-A_exp = int(sys.argv[5])
-A = 10.**(-A_exp)
-LR = float(sys.argv[6])
-H = int(sys.argv[7])
-magn = float(sys.argv[8])
-ridge = float(sys.argv[9])
-pv = int(sys.argv[10])
+LR = float(sys.argv[5])
+H = int(sys.argv[6])
+magn = float(sys.argv[7])
+ridge = float(sys.argv[8])
+pv = int(sys.argv[9])
 
 #choose either task 1 or 2
 task=2
