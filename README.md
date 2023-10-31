@@ -1,3 +1,7 @@
+Code for custom CNNs on custom dataset, relative to the paper "How deep convolutional neural networks lose spatial information with training".
+
+https://scholar.google.com/citations?view_op=view_citation&hl=it&user=cQqn1TQAAAAJ&citation_for_view=cQqn1TQAAAAJ:qjMakFHDy7sC
+
 # scale_detection_1d
 Training simple CNNs on the Scale-Detection task. Compute their sensitivities to input transformations.
 
